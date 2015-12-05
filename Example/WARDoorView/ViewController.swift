@@ -7,20 +7,32 @@
 //
 
 import UIKit
-import WARDoorView
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var warDoorView: WARDoorView!
+    
+    @IBAction func closeDoorButtonAcition(sender: AnyObject) {
+        
+        warDoorView.doorClose(completion: {() in
+            print("Door did close.")
+        })
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        warDoorView.doorOpen()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 
