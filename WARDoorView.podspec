@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "WARDoorView"
-  s.version          = "0.0.1"
+  s.version          = "0.1.0"
   s.summary          = "Door Animation view in iOS"
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Warif Akhand Rishi" => "rishi420@gmail.com" }
-  s.source       = { :git => "https://github.com/rishi420/WARDoorView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/rishi420/WARDoorView.git", :tag => "0.1.0" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
