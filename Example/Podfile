@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'WARDoorView_Example', :exclusive => true do
+  pod "WARDoorView", :path => "../"
+end
+
+target 'WARDoorView_Tests', :exclusive => true do
+  pod "WARDoorView", :path => "../"
+
+  
+end
