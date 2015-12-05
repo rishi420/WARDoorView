@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = "WARDoorView"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of WARDoorView."
+  s.version          = "0.0.1"
+  s.summary          = "Door Animation view in iOS"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -30,8 +30,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  # s.source_files = 'Pod/Classes/**/*'
-  s.source_files  = "WARDoorView"
+  s.source_files = 'Pod/Classes/**/*'
+  # s.source_files  = "WARDoorView"
   s.resource_bundles = {
     'WARDoorView' => ['Pod/Assets/*.png']
   }
