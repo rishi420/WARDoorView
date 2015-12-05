@@ -1,0 +1,6 @@
+framework module Pods_WARDoorView_Example {
+  umbrella header "Pods-WARDoorView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

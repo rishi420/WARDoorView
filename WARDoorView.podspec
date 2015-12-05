@@ -17,19 +17,21 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+    This project shows Door open/close animation.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/WARDoorView"
+  s.homepage         = "https://github.com/rishi420/WARDoorView"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Warif Akhand Rishi" => "rishi420@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/WARDoorView.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/rishi420/WARDoorView.git", :tag => "0.0.1" }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  # s.source_files = 'Pod/Classes/**/*'
+  s.source_files  = "WARDoorView"
   s.resource_bundles = {
     'WARDoorView' => ['Pod/Assets/*.png']
   }

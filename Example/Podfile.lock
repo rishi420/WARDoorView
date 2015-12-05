@@ -1,0 +1,14 @@
+PODS:
+  - WARDoorView (0.1.0)
+
+DEPENDENCIES:
+  - WARDoorView (from `../`)
+
+EXTERNAL SOURCES:
+  WARDoorView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  WARDoorView: 1fc8eb64f7a35b3526747b56bd2bc3f929aa0040
+
+COCOAPODS: 0.39.0
