@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
     'WARDoorView' => ['Pod/Assets/*.png']
   }
 
-  s.public_header_files = 'Pod/Classes/**/*.swift'
+  # s.public_header_files = 'Pod/Classes/**/*.swift'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
