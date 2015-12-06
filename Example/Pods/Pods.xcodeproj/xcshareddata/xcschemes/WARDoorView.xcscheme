@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '66A7A9D454635C1B96A6E410'
+               BlueprintIdentifier = '875BE8F871525AD50960EDD4'
                BlueprintName = 'WARDoorView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'WARDoorView.framework'>
