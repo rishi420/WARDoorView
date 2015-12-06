@@ -1,6 +1,6 @@
 {
   "name": "WARDoorView",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "summary": "Door Animation view in iOS",
   "description": "This project shows Door open/close animation.",
   "homepage": "https://github.com/rishi420/WARDoorView",
@@ -10,16 +10,17 @@
   },
   "source": {
     "git": "https://github.com/rishi420/WARDoorView.git",
-    "tag": "0.0.1"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "source_files": "Pod/Classes/**/*.swift",
   "resource_bundles": {
     "WARDoorView": [
       "Pod/Assets/*.png"
     ]
-  }
+  },
+  "public_header_files": "Pod/Classes/**/*.swift"
 }

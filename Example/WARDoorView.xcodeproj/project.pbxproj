@@ -15,8 +15,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		BC03A3CD1C13394400013A13 /* WARDoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC03A3CA1C13394400013A13 /* WARDoorView.swift */; };
-		BC03A3CE1C13394400013A13 /* WARDoorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC03A3CB1C13394400013A13 /* WARDoorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +46,6 @@
 		7222CC23F863912D9F1C4EA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		910C1B1BDEA661931F30CE8F /* Pods_WARDoorView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WARDoorView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A378031E9F73FE8CE0BD1058 /* Pods_WARDoorView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WARDoorView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC03A3CA1C13394400013A13 /* WARDoorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WARDoorView.swift; sourceTree = "<group>"; };
-		BC03A3CB1C13394400013A13 /* WARDoorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WARDoorView.xib; sourceTree = "<group>"; };
 		CB2954868A10BDA3F1DC350A /* Pods-WARDoorView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WARDoorView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WARDoorView_Tests/Pods-WARDoorView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,7 +102,6 @@
 		607FACD21AFB9204008FA782 /* Example for WARDoorView */ = {
 			isa = PBXGroup;
 			children = (
-				BC03A3CC1C13394400013A13 /* WARDoorView */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -162,16 +157,6 @@
 				6ABC95265D03A1BD0298BFDC /* Pods-WARDoorView_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		BC03A3CC1C13394400013A13 /* WARDoorView */ = {
-			isa = PBXGroup;
-			children = (
-				BC03A3CA1C13394400013A13 /* WARDoorView.swift */,
-				BC03A3CB1C13394400013A13 /* WARDoorView.xib */,
-			);
-			name = WARDoorView;
-			path = ../../Pod/Classes/WARDoorView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				BC03A3CE1C13394400013A13 /* WARDoorView.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -377,7 +361,6 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				BC03A3CD1C13394400013A13 /* WARDoorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

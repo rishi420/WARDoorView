@@ -11,14 +11,13 @@
 		20488C8A40AE454489F5EFD5F40667ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		224C1CD4DD11CA91A12EB1573C4A846B /* Pods-WARDoorView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B2E275B05860C9325A8C2373AC5F4 /* Pods-WARDoorView_Example-dummy.m */; };
 		566AAD533269445242127AD6BDB955DB /* Pods-WARDoorView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCF9D4C147CD785E1506DF8E9BE9671 /* Pods-WARDoorView_Tests-dummy.m */; };
-		6F901F078B08AF23B778623429E74BE7 /* WARDoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0897274682027BBA741588189D148ADC /* WARDoorView.swift */; };
 		9415CB7999F1D18DBB4D57F2F24962C0 /* WARDoorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E298929132EE22D4D0A0B492342AED /* WARDoorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		967E7D1CDC1C364230ACE28EB1E96A55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		99D9D09BF7802DC368E74452C81A1664 /* WARDoorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E4866522A002887175FAE5B7421F3F /* WARDoorView-dummy.m */; };
+		A0E0F30099A021E3F894CE29047B9D22 /* WARDoorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12E4866522A002887175FAE5B7421F3F /* WARDoorView-dummy.m */; };
 		AB84AD7AFD193040E3E16B5FE7E58B60 /* WARDoorView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F71B383C1A1BCC3F80B2CEFCBFA7F53E /* WARDoorView.bundle */; };
-		BCF6E5C5443BA441C6B4EE8ACACA41A7 /* WARDoorView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 599D5CE00FB4CF3AF1F9880331D07D9B /* WARDoorView.xib */; };
 		CE89B3EEF5509DD953AE5609C753A402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		DF1D8C81A1F88BE33C02EF986B9CDC2D /* Pods-WARDoorView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7260B1D4D3E5A1ED3E6A22EFA7B4F98 /* Pods-WARDoorView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDBD1C5335F38193EA0D4AA1272AEE52 /* WARDoorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276CEA772E41BAA0DA2BF1F6EF8D9FF0 /* WARDoorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0897274682027BBA741588189D148ADC /* WARDoorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WARDoorView.swift; sourceTree = "<group>"; };
 		12E4866522A002887175FAE5B7421F3F /* WARDoorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WARDoorView-dummy.m"; sourceTree = "<group>"; };
 		2331DCADEC1A0822BD86EE1BDC37E1B8 /* Pods-WARDoorView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WARDoorView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		276CEA772E41BAA0DA2BF1F6EF8D9FF0 /* WARDoorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WARDoorView.swift; sourceTree = "<group>"; };
 		29B2ACDF8F1849C54DA8CAB3031C71FD /* Pods-WARDoorView_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WARDoorView_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		3510061B203FF736C814F114EA4E69D9 /* Pods-WARDoorView_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WARDoorView_Tests-resources.sh"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -56,7 +55,6 @@
 		495F56F1AACDFB5527BA231CF35809DB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		539F76CE80789B5D2A7F597B435FDADA /* Pods_WARDoorView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WARDoorView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		586E47BAF5B4D3B34F236D29BCB88A37 /* WARDoorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WARDoorView-prefix.pch"; sourceTree = "<group>"; };
-		599D5CE00FB4CF3AF1F9880331D07D9B /* WARDoorView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = WARDoorView.xib; sourceTree = "<group>"; };
 		61CC767ED28D655594C3BE0E571CB4AF /* Pods-WARDoorView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WARDoorView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6581032216F92EB1D9EB23F8C74161FA /* Pods-WARDoorView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WARDoorView_Tests.modulemap"; sourceTree = "<group>"; };
 		716B2E275B05860C9325A8C2373AC5F4 /* Pods-WARDoorView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WARDoorView_Example-dummy.m"; sourceTree = "<group>"; };
@@ -117,18 +115,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		173489DCBCCEB0ABBBFF31173AA9B6FD /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				892BF353018DF61A1A646CBE5F18F84A /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		32FEAB882B6E0A910A07BB3C22F8774B /* WARDoorView */ = {
 			isa = PBXGroup;
 			children = (
-				173489DCBCCEB0ABBBFF31173AA9B6FD /* Pod */,
+				BF731DFB19A65E753597A7D93C0C38F0 /* Pod */,
 				DD50C3A824B0061F9A89D5B4F8DCEBF1 /* Support Files */,
 			);
 			name = WARDoorView;
@@ -153,6 +143,14 @@
 			path = "Target Support Files/Pods-WARDoorView_Tests";
 			sourceTree = "<group>";
 		};
+		5BE20C97990D39AE02097A286B3C1BEB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DCBA4099BEEFBF112E36B3F5A9DE3191 /* WARDoorView */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -171,14 +169,6 @@
 				36677122AD1D2FCD177AD6141F9A43B5 /* Pods-WARDoorView_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		892BF353018DF61A1A646CBE5F18F84A /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D21C2936E05AB9D28F9476BD73C3125D /* WARDoorView */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		9D8A08ED2BC3829F9DBE54BEECFC30B9 /* Pods-WARDoorView_Example */ = {
@@ -226,13 +216,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D21C2936E05AB9D28F9476BD73C3125D /* WARDoorView */ = {
+		BF731DFB19A65E753597A7D93C0C38F0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0897274682027BBA741588189D148ADC /* WARDoorView.swift */,
-				599D5CE00FB4CF3AF1F9880331D07D9B /* WARDoorView.xib */,
+				5BE20C97990D39AE02097A286B3C1BEB /* Classes */,
 			);
-			path = WARDoorView;
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		D3339D5AC6C8BC8770BB37DB5ECF4522 /* Development Pods */ = {
@@ -241,6 +230,14 @@
 				32FEAB882B6E0A910A07BB3C22F8774B /* WARDoorView */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		DCBA4099BEEFBF112E36B3F5A9DE3191 /* WARDoorView */ = {
+			isa = PBXGroup;
+			children = (
+				276CEA772E41BAA0DA2BF1F6EF8D9FF0 /* WARDoorView.swift */,
+			);
+			path = WARDoorView;
 			sourceTree = "<group>";
 		};
 		DD50C3A824B0061F9A89D5B4F8DCEBF1 /* Support Files */ = {
@@ -344,7 +341,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EB19A927A17E3F5C5E9920B24393DAD /* Build configuration list for PBXNativeTarget "WARDoorView" */;
 			buildPhases = (
-				8AB8866627E588EBF365FFCBD3CFD6A6 /* Sources */,
+				9A602BA76A8949E1B2083230134648AA /* Sources */,
 				058C3A16D1539D8C482086F9B39E01D4 /* Frameworks */,
 				F73A6822F6D2C942106698D58D0BA4B8 /* Resources */,
 				8246329DF9E8E3CECA14E283B34C0F2B /* Headers */,
@@ -414,13 +411,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AB8866627E588EBF365FFCBD3CFD6A6 /* Sources */ = {
+		9A602BA76A8949E1B2083230134648AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99D9D09BF7802DC368E74452C81A1664 /* WARDoorView-dummy.m in Sources */,
-				6F901F078B08AF23B778623429E74BE7 /* WARDoorView.swift in Sources */,
-				BCF6E5C5443BA441C6B4EE8ACACA41A7 /* WARDoorView.xib in Sources */,
+				A0E0F30099A021E3F894CE29047B9D22 /* WARDoorView-dummy.m in Sources */,
+				EDBD1C5335F38193EA0D4AA1272AEE52 /* WARDoorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
