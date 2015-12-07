@@ -13,7 +13,18 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
+		BC1F1A9B1C15B37C00940CD1 /* WARDoorView_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1F1A9A1C15B37C00940CD1 /* WARDoorView_Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC1F1A9D1C15B37C00940CD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = WARDoorView_Example;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0C2F2D77875F18D1C2A1CF15 /* Pods-WARDoorView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WARDoorView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WARDoorView_Example/Pods-WARDoorView_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -33,6 +44,9 @@
 		7222CC23F863912D9F1C4EA1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		910C1B1BDEA661931F30CE8F /* Pods_WARDoorView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WARDoorView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A378031E9F73FE8CE0BD1058 /* Pods_WARDoorView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WARDoorView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1F1A981C15B37C00940CD1 /* WARDoorView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WARDoorView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1F1A9A1C15B37C00940CD1 /* WARDoorView_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WARDoorView_Tests.swift; sourceTree = "<group>"; };
+		BC1F1A9C1C15B37C00940CD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB2954868A10BDA3F1DC350A /* Pods-WARDoorView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WARDoorView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WARDoorView_Tests/Pods-WARDoorView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +56,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4733CD79CE1263804B8D5788 /* Pods_WARDoorView_Example.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1F1A951C15B37C00940CD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for WARDoorView */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				BC1F1A991C15B37C00940CD1 /* WARDoorView_Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				93F03D70F2F1EC0D9A1EE424 /* Pods */,
 				2BA6003F43E0BF4F12B559B4 /* Frameworks */,
@@ -73,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* WARDoorView_Example.app */,
+				BC1F1A981C15B37C00940CD1 /* WARDoorView_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +160,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BC1F1A991C15B37C00940CD1 /* WARDoorView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BC1F1A9A1C15B37C00940CD1 /* WARDoorView_Tests.swift */,
+				BC1F1A9C1C15B37C00940CD1 /* Info.plist */,
+			);
+			path = WARDoorView_Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +192,24 @@
 			productReference = 607FACD01AFB9204008FA782 /* WARDoorView_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BC1F1A971C15B37C00940CD1 /* WARDoorView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC1F1AA11C15B37C00940CD1 /* Build configuration list for PBXNativeTarget "WARDoorView_Tests" */;
+			buildPhases = (
+				BC1F1A941C15B37C00940CD1 /* Sources */,
+				BC1F1A951C15B37C00940CD1 /* Frameworks */,
+				BC1F1A961C15B37C00940CD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC1F1A9E1C15B37C00940CD1 /* PBXTargetDependency */,
+			);
+			name = WARDoorView_Tests;
+			productName = WARDoorView_Tests;
+			productReference = BC1F1A981C15B37C00940CD1 /* WARDoorView_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +222,10 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+					};
+					BC1F1A971C15B37C00940CD1 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
 			};
@@ -189,6 +243,7 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* WARDoorView_Example */,
+				BC1F1A971C15B37C00940CD1 /* WARDoorView_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +256,13 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1F1A961C15B37C00940CD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +326,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC1F1A941C15B37C00940CD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1F1A9B1C15B37C00940CD1 /* WARDoorView_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC1F1A9E1C15B37C00940CD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* WARDoorView_Example */;
+			targetProxy = BC1F1A9D1C15B37C00940CD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
@@ -394,6 +472,33 @@
 			};
 			name = Release;
 		};
+		BC1F1A9F1C15B37C00940CD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = WARDoorView_Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.war.WARDoorView-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WARDoorView_Example.app/WARDoorView_Example";
+			};
+			name = Debug;
+		};
+		BC1F1AA01C15B37C00940CD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WARDoorView_Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.war.WARDoorView-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WARDoorView_Example.app/WARDoorView_Example";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -414,6 +519,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		BC1F1AA11C15B37C00940CD1 /* Build configuration list for PBXNativeTarget "WARDoorView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1F1A9F1C15B37C00940CD1 /* Debug */,
+				BC1F1AA01C15B37C00940CD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
