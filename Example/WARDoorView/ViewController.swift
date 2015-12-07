@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WARDoorView
 
 class ViewController: UIViewController {
 

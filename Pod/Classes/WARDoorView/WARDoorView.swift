@@ -14,7 +14,7 @@ private enum DoorType {
 }
 
 @IBDesignable
-class WARDoorView: UIView {
+public class WARDoorView: UIView {
     
     @IBOutlet weak private var leftImageView: UIImageView!
     @IBOutlet weak private var rightImageView: UIImageView!
@@ -36,7 +36,7 @@ class WARDoorView: UIView {
     
     // MARK: Public Functions
     
-    func doorOpen(angle: Double = 90.0, duration: NSTimeInterval = 2, delay: NSTimeInterval = 2, completion: (() -> Void) = {}) {
+    public func doorOpen(angle: Double = 90.0, duration: NSTimeInterval = 2, delay: NSTimeInterval = 2, completion: (() -> Void) = {}) {
         
         let rightTransform = get3DTransformationForDoorType(.Right, angle: angle)
         let leftTransform = get3DTransformationForDoorType(.Left, angle: angle)
@@ -50,7 +50,7 @@ class WARDoorView: UIView {
         })
     }
     
-    func doorClose(duration: NSTimeInterval = 1.3, delay: NSTimeInterval = 0, completion: (() -> Void) = {}) {
+    public func doorClose(duration: NSTimeInterval = 1.3, delay: NSTimeInterval = 0, completion: (() -> Void) = {}) {
 
         self.alpha = 1.0
         
@@ -65,7 +65,7 @@ class WARDoorView: UIView {
     
     // MARK: Initializers
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         loadViewFromNib()
     }
