@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/WARDoorView.svg?style=flat)](http://cocoapods.org/pods/WARDoorView)
 [![Platform](https://img.shields.io/cocoapods/p/WARDoorView.svg?style=flat)](http://cocoapods.org/pods/WARDoorView)
 
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/2233857/11636265/7b77b970-9d45-11e5-8612-146e53070088.gif"/></p>
+
 ## Features
 
 - [x] Written in Swift
@@ -25,10 +27,11 @@ import WARDoorView
 @import WARDoorView;
 ```
 
+<p align="center"><img src="https://cloud.githubusercontent.com/assets/2233857/11636817/3b077706-9d48-11e5-9b6a-a13eec543bb9.gif"/></p>
 
 ## Requirements
 
-- iOS 8.0+ / Mac OS X 10.9+ / tvOS 9.0+ / watchOS 2.0+
+- iOS 8.0+
 - Xcode 7.1+
 
 
