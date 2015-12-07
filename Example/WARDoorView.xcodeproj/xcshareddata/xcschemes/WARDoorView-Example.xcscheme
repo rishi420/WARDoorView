@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BlueprintIdentifier = "BC1F1A971C15B37C00940CD1"
                BuildableName = "WARDoorView_Tests.xctest"
                BlueprintName = "WARDoorView_Tests"
                ReferencedContainer = "container:WARDoorView.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
+               BlueprintIdentifier = "BC1F1A971C15B37C00940CD1"
                BuildableName = "WARDoorView_Tests.xctest"
                BlueprintName = "WARDoorView_Tests"
                ReferencedContainer = "container:WARDoorView.xcodeproj">
