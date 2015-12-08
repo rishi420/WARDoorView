@@ -18,16 +18,34 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ### Swift
-```bash
+```swift
 import WARDoorView
-```
 
+public func doorOpen(angle: Double = default, duration: NSTimeInterval = default, delay: NSTimeInterval = default, completion: (() -> Void) = default)
+
+public func doorClose(duration: NSTimeInterval = default, delay: NSTimeInterval = default, completion: (() -> Void) = default)
+
+// Example
+    warDoorViewObj.doorOpen(delay: 10)
+//or 
+    warDoorViewObj.doorOpen()
+```
 ### Objective-C
-```bash
+```Objective-C
 @import WARDoorView;
+
+// Example
+    [warDoorViewObj doorOpen:90 duration:2 delay:1 completion:^{
+        //Door did open
+    }];
+    
+    [warDoorViewObj doorClose:2 delay:1 completion:^{
+        //Door did close
+    }];
 ```
 
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/2233857/11636817/3b077706-9d48-11e5-9b6a-a13eec543bb9.gif"/></p>
+
 
 ## Requirements
 
