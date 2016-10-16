@@ -9,55 +9,58 @@
 import UIKit
 
 private enum DoorType {
-    case Left
-    case Right
+    case left
+    case right
 }
 
 @IBDesignable
-public class WARDoorView: UIView {
+open class WARDoorView: UIView {
     
-    @IBOutlet weak private var leftImageView: UIImageView!
-    @IBOutlet weak private var rightImageView: UIImageView!
+    @IBOutlet weak fileprivate var leftImageView: UIImageView!
+    @IBOutlet weak fileprivate var rightImageView: UIImageView!
     
     @IBInspectable var leftImage: UIImage? {
         didSet {
             leftImageView.image = leftImage
-            leftImageView.layer.anchorPoint = CGPointMake(0.0, 0.5)
+            leftImageView.layer.anchorPoint = CGPoint(x: 0.0, y: 0.5)
         }
     }
     
     @IBInspectable var rightImage: UIImage? {
         didSet {
             rightImageView.image = rightImage
-            rightImageView.layer.anchorPoint = CGPointMake(1.0, 0.5)
+            rightImageView.layer.anchorPoint = CGPoint(x: 1.0, y: 0.5)
         }
     }
 
     
     // MARK: Public Functions
     
-    public func doorOpen(angle: Double = 90.0, duration: NSTimeInterval = 2, delay: NSTimeInterval = 2, completion: (() -> Void) = {}) {
+    open func open(_ angle: Double = 90.0, duration: TimeInterval = 1.3, delay: TimeInterval = 0, completion: @escaping (() -> Void) = {}) {
         
-        let rightTransform = get3DTransformationForDoorType(.Right, angle: angle)
-        let leftTransform = get3DTransformationForDoorType(.Left, angle: angle)
+        let rightTransform = get3DTransformationForDoorType(.right, angle: angle)
+        let leftTransform = get3DTransformationForDoorType(.left, angle: angle)
         
-        UIView.animateWithDuration(1.3, delay: 1, options: .TransitionNone, animations: { () -> Void in
+        isUserInteractionEnabled = true
+        
+        UIView.animate(withDuration: duration, delay: delay, options: [.curveEaseOut, .beginFromCurrentState], animations: { () -> Void in
                 self.leftImageView.layer.transform = leftTransform
                 self.rightImageView.layer.transform = rightTransform
             }, completion: { (finished) -> Void in
-                self.alpha = 0.0
+                self.isUserInteractionEnabled = false
                 completion()
         })
     }
     
-    public func doorClose(duration: NSTimeInterval = 1.3, delay: NSTimeInterval = 0, completion: (() -> Void) = {}) {
+    open func close(_ duration: TimeInterval = 1.3, delay: TimeInterval = 0, completion: @escaping (() -> Void) = {}) {
 
-        self.alpha = 1.0
+        isUserInteractionEnabled = true
         
-        UIView.animateWithDuration(duration, delay: delay, options: .TransitionNone, animations: { () -> Void in
+        UIView.animate(withDuration: duration, delay: delay, options: [.curveEaseOut, .beginFromCurrentState], animations: { () -> Void in
                 self.leftImageView.layer.transform = CATransform3DIdentity
                 self.rightImageView.layer.transform = CATransform3DIdentity
             }, completion: { (finished) -> Void in
+                self.isUserInteractionEnabled = true
                 completion()
         })
     }
@@ -78,19 +81,20 @@ public class WARDoorView: UIView {
     
     // MARK: Private Functions
 
-    private func loadViewFromNib() {
-        let bundle = NSBundle(forClass: self.dynamicType)
+    fileprivate func loadViewFromNib() {
+        let bundle = Bundle(for: type(of: self))
         let nib = UINib(nibName: "WARDoorView", bundle: bundle)
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
         view.frame = bounds
-        view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.addSubview(view);
     }
     
-    private func get3DTransformationForDoorType(doorType: DoorType, var angle: Double) -> CATransform3D {
+    private func get3DTransformationForDoorType(_ doorType: DoorType, angle: Double) -> CATransform3D {
+        var angle = angle
         
         switch(doorType) {
-        case .Right: angle *= -1
+        case .right: angle *= -1
         default: ()
         }
         

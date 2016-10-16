@@ -13,11 +13,23 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var warDoorView: WARDoorView!
     
-    @IBAction func closeDoorButtonAcition(sender: AnyObject) {
+    @IBAction func closeDoorButtonAcition(_ sender: UIButton) {
         
-        warDoorView.doorClose(completion: {() in
-            print("Door did close.")
-        })
+        sender.isSelected = !sender.isSelected
+        
+        if sender.isSelected {
+            warDoorView.open {
+                print("Door did Open.")
+            }
+        } else {
+            warDoorView.close {
+                print("Door did Close.")
+            }
+        }
+    }
+    
+    @IBAction func insideButtonAction(_ sender: UIButton) {
+        print("Inside Button presed")
     }
     
     override func viewDidLoad() {
@@ -25,10 +37,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        warDoorView.doorOpen()
     }
     
     override func didReceiveMemoryWarning() {
