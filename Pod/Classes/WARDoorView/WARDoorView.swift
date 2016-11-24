@@ -90,7 +90,7 @@ open class WARDoorView: UIView {
         self.addSubview(view);
     }
     
-    private func get3DTransformationForDoorType(_ doorType: DoorType, angle: Double) -> CATransform3D {
+    fileprivate func get3DTransformationForDoorType(_ doorType: DoorType, angle: Double) -> CATransform3D {
         var angle = angle
         
         switch(doorType) {
